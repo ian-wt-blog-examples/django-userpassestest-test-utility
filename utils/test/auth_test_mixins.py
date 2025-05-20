@@ -16,7 +16,7 @@ class StaffUserTestMixin:
 
     Note: Not compatible with user_passes_test_mixin!
     """
-    def test_permission_denied(self):
+    def test_staff_only(self):
         username = f'user-{str(uuid.uuid4())}'
         user = User()
 
